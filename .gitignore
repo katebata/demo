@@ -1,4 +1,11 @@
-*/target/
-*/.idea/
-*/node_modules
-*/.DS_store
+# IntelliJ/IDEA project files
+.idea/
+
+# Build output
+/target/
+
+# Node.js modules
+node_modules/
+
+# macOS metadata
+.DS_Store
