@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="96ec1dc4-3b75-4b89-ac3d-2e7aac66b6fe" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Interface" />
+        <option value="Record" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2uPZwVdnOQHr1ByHzxWfeiQsFii" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerIntegrationTest.canDeleteCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerIntegrationTest.canRegisterACustomer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerIntegrationTest.canUpdateCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.deleteCustomerById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.existsCustomerWithEmail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.insertCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.selectAllCustomers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.selectCustomerById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.updateCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJDBCAccessServiceTest.willReturnEmptyWhenSelectCustomerById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJPADataAccessServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerJPADataAccessServiceTest.selectAllCustomers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerRepositoryTest.existsCustomerByEmail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerRowMapperTest.mapRow.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.deleteCustomerById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.deleteCustomerByIdFailsWhenCustomerDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.CustomerServiceTest.getAllCustomers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.getCustomerById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.getCustomerByIdFailsWhenCustomerDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.insertCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.insertCustomerFailsWhenEmailExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.updateCustomerAllFieldsUpdated.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.updateCustomerEmailUpdated.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.updateCustomerFailsWhenCustomerDoesNotExist.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.updateCustomerFailsWhenEmailAlreadyExists.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.updateCustomerFailsWhenNoNewDataWasFound.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CustomerServiceTest.updateCustomerNameUpdated.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TestcontainersTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [org.springframework.boot:spring-boot-maven-plugin:3.5.0-SNAPSHOT:run].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.demo [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Main.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.demo.Customer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CustomerIntegrationTest">
+    <configuration name="CustomerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.journey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.journey" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.journey.CustomerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerIntegrationTest.canDeleteCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.journey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.journey" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.journey.CustomerIntegrationTest" />
+      <option name="METHOD_NAME" value="canDeleteCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerIntegrationTest.canRegisterACustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.journey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.journey" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.journey.CustomerIntegrationTest" />
+      <option name="METHOD_NAME" value="canRegisterACustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerIntegrationTest.canUpdateCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.journey.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.journey" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.journey.CustomerIntegrationTest" />
+      <option name="METHOD_NAME" value="canUpdateCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRowMapperTest.mapRow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.Customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo.Customer" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.Customer.CustomerRowMapperTest" />
+      <option name="METHOD_NAME" value="mapRow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomerIntegrationTest" />
+        <item itemvalue="JUnit.CustomerIntegrationTest.canUpdateCustomer" />
+        <item itemvalue="JUnit.CustomerIntegrationTest.canDeleteCustomer" />
+        <item itemvalue="JUnit.CustomerIntegrationTest.canRegisterACustomer" />
+        <item itemvalue="JUnit.CustomerRowMapperTest.mapRow" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.59" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.59" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96ec1dc4-3b75-4b89-ac3d-2e7aac66b6fe" name="Changes" comment="" />
+      <created>1742152416537</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742152416537</updated>
+      <workItem from="1742152418255" duration="14368000" />
+      <workItem from="1744296579415" duration="13808000" />
+      <workItem from="1744563724773" duration="2544000" />
+      <workItem from="1744566542821" duration="40229000" />
+      <workItem from="1745157912502" duration="22656000" />
+      <workItem from="1745259271947" duration="12922000" />
+      <workItem from="1745382910585" duration="23414000" />
+      <workItem from="1745502524043" duration="13156000" />
+      <workItem from="1745867327667" duration="11717000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demo$CustomerServiceTest.ic" NAME="CustomerServiceTest Coverage Results" MODIFIED="1745439628778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.demo.Customer.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/demo$CustomerJDBCAccessServiceTest.ic" NAME="CustomerJDBCAccessServiceTest Coverage Results" MODIFIED="1745203203372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.example.demo.Customer.*</FILTER>
+    </SUITE>
+  </component>
+</project>
