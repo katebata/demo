@@ -177,15 +177,6 @@
 						</tags>
 					</to>
 				</configuration>
-				<executions>
-					<execution>
-						<id>jib-build-and-push</id>
-						<goals>
-							<goal>build</goal>
-						</goals>
-						<phase>package</phase>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
