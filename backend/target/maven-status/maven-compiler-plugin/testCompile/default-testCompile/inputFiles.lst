@@ -1,0 +1,8 @@
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/AbstractTestContainersDaoUnitTest.java
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/Customer/CustomerJDBCAccessServiceTest.java
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/Customer/CustomerJPADataAccessServiceTest.java
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/Customer/CustomerRepositoryTest.java
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/Customer/CustomerRowMapperTest.java
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/Customer/CustomerServiceTest.java
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/TestcontainersTest.java
+/home/runner/work/demo/demo/backend/src/test/java/com/example/demo/journey/CustomerIntegrationTest.java

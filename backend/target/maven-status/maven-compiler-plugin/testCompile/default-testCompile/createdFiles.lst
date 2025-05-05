@@ -1,0 +1,13 @@
+com/example/demo/Customer/CustomerServiceTest.class
+com/example/demo/TestcontainersTest.class
+com/example/demo/journey/CustomerIntegrationTest$2.class
+com/example/demo/journey/CustomerIntegrationTest$1.class
+com/example/demo/journey/CustomerIntegrationTest$3.class
+com/example/demo/Customer/CustomerJPADataAccessServiceTest.class
+com/example/demo/Customer/CustomerJDBCAccessServiceTest.class
+com/example/demo/AbstractTestContainersDaoUnitTest.class
+com/example/demo/journey/CustomerIntegrationTest.class
+com/example/demo/Customer/CustomerRepositoryTest.class
+com/example/demo/journey/CustomerIntegrationTest$5.class
+com/example/demo/Customer/CustomerRowMapperTest.class
+com/example/demo/journey/CustomerIntegrationTest$4.class
