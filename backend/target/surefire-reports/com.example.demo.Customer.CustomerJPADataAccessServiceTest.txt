@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.demo.Customer.CustomerJPADataAccessServiceTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.102 s -- in com.example.demo.Customer.CustomerJPADataAccessServiceTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s -- in com.example.demo.Customer.CustomerJPADataAccessServiceTest
