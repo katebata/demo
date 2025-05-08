@@ -8,6 +8,7 @@ import com.example.demo.Customer.CustomerRepository__BeanDefinitions;
 import com.example.demo.Customer.CustomerRowMapper__BeanDefinitions;
 import com.example.demo.Customer.CustomerService__BeanDefinitions;
 import com.example.demo.Customer.GlobalExceptionHandler__BeanDefinitions;
+import com.example.demo.Customer.PingPongController__BeanDefinitions;
 import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator__BeanDefinitions;
 import org.springframework.aot.generate.Generated;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
@@ -440,8 +441,8 @@ public class Main__BeanFactoryRegistrations {
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.http.client.HttpClientAutoConfiguration", HttpClientAutoConfiguration__BeanDefinitions.getHttpClientAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("clientHttpRequestFactoryBuilder", HttpClientAutoConfiguration__BeanDefinitions.getClientHttpRequestFactoryBuilderBeanDefinition());
     beanFactory.registerBeanDefinition("clientHttpRequestFactorySettings", HttpClientAutoConfiguration__BeanDefinitions.getClientHttpRequestFactorySettingsBeanDefinition());
-    beanFactory.registerBeanDefinition("spring.http.client-org.springframework.boot.autoconfigure.http.client.HttpClientProperties", HttpClientProperties__BeanDefinitions.getHttpClientPropertiesBeanDefinition());
     beanFactory.registerBeanDefinition("spring.http.client.settings-org.springframework.boot.autoconfigure.http.client.HttpClientSettingsProperties", HttpClientSettingsProperties__BeanDefinitions.getHttpClientSettingsPropertiesBeanDefinition());
+    beanFactory.registerBeanDefinition("spring.http.client-org.springframework.boot.autoconfigure.http.client.HttpClientProperties", HttpClientProperties__BeanDefinitions.getHttpClientPropertiesBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.web.client.RestClientAutoConfiguration", RestClientAutoConfiguration__BeanDefinitions.getRestClientAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("httpMessageConvertersRestClientCustomizer", RestClientAutoConfiguration__BeanDefinitions.getHttpMessageConvertersRestClientCustomizerBeanDefinition());
     beanFactory.registerBeanDefinition("restClientSsl", RestClientAutoConfiguration__BeanDefinitions.getRestClientSslBeanDefinition());

@@ -4,7 +4,7 @@
   "containerDefinitions": [
     {
       "name": "demo-api",
-      "image": "downloa27/demo-api:08.05.2025.12.53.04",
+      "image": "downloa27/demo-api:08.05.2025.12.57.31",
       "essential": true,
       "memory": 512,
       "portMappings": [

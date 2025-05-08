@@ -10,8 +10,8 @@
 /home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Customer/CustomerService.java
 /home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Customer/CustomerUpdateRequest.java
 /home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Customer/GlobalExceptionHandler.java
+/home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Customer/PingPongController.java
 /home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Exceptions/DuplicateRessourceException.java
 /home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Exceptions/NoUpdateDetectedException.java
 /home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Exceptions/RessourceNotFoundException.java
 /home/runner/work/demo/demo/backend/src/main/java/com/example/demo/Main.java
-/home/runner/work/demo/demo/backend/src/main/java/com/example/demo/PingPongController.java
