@@ -260,34 +260,6 @@
     ]
   },
   {
-    "name": "com.example.demo.Customer.PingPongController",
-    "queryAllPublicMethods": true,
-    "queryAllDeclaredMethods": true,
-    "methods": [
-      {
-        "name": "getPingPong",
-        "parameterTypes": [ ]
-      }
-    ],
-    "queriedMethods": [
-      {
-        "name": "<init>",
-        "parameterTypes": [ ]
-      }
-    ]
-  },
-  {
-    "name": "com.example.demo.Customer.PingPongController$PingPong",
-    "allDeclaredFields": true,
-    "allDeclaredConstructors": true,
-    "methods": [
-      {
-        "name": "message",
-        "parameterTypes": [ ]
-      }
-    ]
-  },
-  {
     "name": "com.example.demo.Main",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
@@ -334,6 +306,34 @@
     "methods": [
       {
         "name": "<init>",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.example.demo.PingPongController",
+    "queryAllPublicMethods": true,
+    "queryAllDeclaredMethods": true,
+    "methods": [
+      {
+        "name": "getPingPong",
+        "parameterTypes": [ ]
+      }
+    ],
+    "queriedMethods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.example.demo.PingPongController$PingPong",
+    "allDeclaredFields": true,
+    "allDeclaredConstructors": true,
+    "methods": [
+      {
+        "name": "message",
         "parameterTypes": [ ]
       }
     ]

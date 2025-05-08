@@ -8,7 +8,6 @@ import com.example.demo.Customer.CustomerRepository__BeanDefinitions;
 import com.example.demo.Customer.CustomerRowMapper__BeanDefinitions;
 import com.example.demo.Customer.CustomerService__BeanDefinitions;
 import com.example.demo.Customer.GlobalExceptionHandler__BeanDefinitions;
-import com.example.demo.Customer.PingPongController__BeanDefinitions;
 import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator__BeanDefinitions;
 import org.springframework.aot.generate.Generated;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
@@ -320,8 +319,8 @@ public class Main__BeanFactoryRegistrations {
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration", ProjectInfoAutoConfiguration__BeanDefinitions.getProjectInfoAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties", ProjectInfoProperties__BeanDefinitions.getProjectInfoPropertiesBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.actuate.autoconfigure.info.InfoContributorAutoConfiguration", InfoContributorAutoConfiguration__BeanDefinitions.getInfoContributorAutoConfigurationBeanDefinition());
-    beanFactory.registerBeanDefinition("management.health.ssl-org.springframework.boot.actuate.autoconfigure.ssl.SslHealthIndicatorProperties", SslHealthIndicatorProperties__BeanDefinitions.getSslHealthIndicatorPropertiesBeanDefinition());
     beanFactory.registerBeanDefinition("management.info-org.springframework.boot.actuate.autoconfigure.info.InfoContributorProperties", InfoContributorProperties__BeanDefinitions.getInfoContributorPropertiesBeanDefinition());
+    beanFactory.registerBeanDefinition("management.health.ssl-org.springframework.boot.actuate.autoconfigure.ssl.SslHealthIndicatorProperties", SslHealthIndicatorProperties__BeanDefinitions.getSslHealthIndicatorPropertiesBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.actuate.autoconfigure.web.servlet.ServletManagementContextAutoConfiguration", ServletManagementContextAutoConfiguration__BeanDefinitions.getServletManagementContextAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("servletWebChildContextFactory", ServletManagementContextAutoConfiguration__BeanDefinitions.getServletWebChildContextFactoryBeanDefinition());
     beanFactory.registerBeanDefinition("managementServletContext", ServletManagementContextAutoConfiguration__BeanDefinitions.getManagementServletContextBeanDefinition());
