@@ -123,3 +123,11 @@ jobs:
                -H 'Content-Type: application/json' \
                --data '{"text":"Deployment and commit completed :success: :github_parrot: "}' \
                "${{ secrets.SLACK_WEBHOOK_URL }}"
+
+      - name: Job Status Slack Message
+        if: always()
+        run: |
+          curl -X POST \
+               -H 'Content-Type: application/json' \
+               --data '{"text":"Job Status ${{job.status}}"}' \
+               "${{ secrets.SLACK_WEBHOOK_URL }}"
