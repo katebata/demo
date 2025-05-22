@@ -11,6 +11,7 @@ import java.util.List;
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
+
     @Value("#{'${allowedOrigins}'.split(',')}")
     private List<String> allowedOrigins;
 
