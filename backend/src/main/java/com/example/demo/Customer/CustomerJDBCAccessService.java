@@ -47,10 +47,10 @@ public class CustomerJDBCAccessService implements CustomerDao {
     @Override
     public void insertCustomer(Customer customer) {
         var sql = """
-                INSERT INTO customer(name, email, age)
-                VALUES (?, ?, ?)
+                INSERT INTO customer(name, email, age, gender)
+                VALUES (?, ?, ?, ?)
                 """;
-        int update = jdbcTemplate.update(sql, customer.getName(), customer.getEmail(), customer.getAge());
+        int update = jdbcTemplate.update(sql, customer.getName(), customer.getEmail(), customer.getAge(), customer.getGender().getLabel());
 
         System.out.println(update);
     }
@@ -98,13 +98,15 @@ public class CustomerJDBCAccessService implements CustomerDao {
                 UPDATE customer
                 SET name = ?,
                     email = ?,
-                    age = ?
+                    age = ?,
+                    gender = ?
                 WHERE id = ?""";
 
         jdbcTemplate.update(sql,
                 customer.getName(),
                 customer.getEmail(),
                 customer.getAge(),
+                customer.getGender().getLabel(),
                 customer.getId());
     }
 }

@@ -31,13 +31,14 @@ class CustomerRowMapperTest {
     void mapRow() throws SQLException {
         // Given
         Customer expectedCustomer = new Customer(
-                1,"helio","helio@gmail.com",22
+                1,"helio","helio@gmail.com",22,Gender.fromLabel("Male")
         );
         // When
         when(mockResultSet.getInt("id")).thenReturn(1);
         when(mockResultSet.getString("name")).thenReturn("helio");
         when(mockResultSet.getString("email")).thenReturn("helio@gmail.com");
         when(mockResultSet.getInt("age")).thenReturn(22);
+        when(mockResultSet.getString("gender")).thenReturn("Male");
         // Then
 
         Customer mappedCustomer = customerRowMapper.mapRow(mockResultSet, 1);

@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 
 @Service
 public class CustomerService {
@@ -38,7 +37,8 @@ public class CustomerService {
         customerDao.insertCustomer(new Customer(
                 customerRegistrationRequest.name(),
                 customerRegistrationRequest.email(),
-                customerRegistrationRequest.age()
+                customerRegistrationRequest.age(),
+                customerRegistrationRequest.gender()
         ));
     }
 
@@ -58,6 +58,12 @@ public class CustomerService {
         if(customerUpdateRequest.age() != null
                 && !customer.getAge().equals(customerUpdateRequest.age())){
             customer.setAge(customerUpdateRequest.age());
+            changes = true;
+        }
+
+        if(customerUpdateRequest.gender() != null
+                && !customer.getGender().equals(customerUpdateRequest.gender())){
+            customer.setGender(customerUpdateRequest.gender());
             changes = true;
         }
 

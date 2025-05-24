@@ -31,7 +31,8 @@ class CustomerRepositoryTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
         underTest.save(customer);
         // When
@@ -46,7 +47,8 @@ class CustomerRepositoryTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
         underTest.save(customer);
         // When
@@ -61,7 +63,8 @@ class CustomerRepositoryTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
         underTest.save(customer);
 

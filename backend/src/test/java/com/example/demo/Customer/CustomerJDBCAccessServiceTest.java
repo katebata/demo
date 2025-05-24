@@ -32,7 +32,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
         customerJDBCAccessService.insertCustomer(customer);
 
@@ -49,7 +50,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         customerJDBCAccessService.insertCustomer(customer);
@@ -71,6 +73,7 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
                     assertThat(c.getEmail()).isEqualTo(customer.getEmail());
                     assertThat(c.getName()).isEqualTo(customer.getName());
                     assertThat(c.getAge()).isEqualTo(customer.getAge());
+                    assertThat(c.getGender()).isEqualTo(customer.getGender());
                 });
 
     }
@@ -81,7 +84,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         customerJDBCAccessService.insertCustomer(customer);
@@ -108,7 +112,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         // When
@@ -129,6 +134,7 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
                     assertThat(c.getName()).isEqualTo(customer.getName());
                     assertThat(c.getAge()).isEqualTo(customer.getAge());
                     assertThat(c.getEmail()).isEqualTo(customer.getEmail());
+                    assertThat(c.getGender()).isEqualTo(customer.getGender());
                 });
     }
 
@@ -138,7 +144,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         customerJDBCAccessService.insertCustomer(customer);
@@ -155,7 +162,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         customerJDBCAccessService.insertCustomer(customer);
@@ -179,7 +187,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         customerJDBCAccessService.insertCustomer(customer);
@@ -203,7 +212,8 @@ class CustomerJDBCAccessServiceTest extends AbstractTestContainersDaoUnitTest {
         Customer customer = new Customer(
                 faker.name().fullName(),
                 faker.internet().safeEmailAddress() + "_" + UUID.randomUUID(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         customerJDBCAccessService.insertCustomer(customer);

@@ -37,12 +37,13 @@ class CustomerServiceTest {
 
     @BeforeEach
     void setUp() {
-        customerOne = new Customer("helio","helio@gmail.com",22);
-        customerTwo = new Customer("sandra","sandra@gmail.com",25);
+        customerOne = new Customer("helio","helio@gmail.com",22,Gender.fromLabel("Male"));
+        customerTwo = new Customer("sandra","sandra@gmail.com",25,Gender.fromLabel("Female"));
         customerUpdateRequest = new CustomerUpdateRequest(
                 customerOne.getName(),
                 customerOne.getEmail(),
-                customerOne.getAge()
+                customerOne.getAge(),
+                customerOne.getGender()
         );
     }
 
@@ -96,7 +97,8 @@ class CustomerServiceTest {
         CustomerRegistrationRequest customerRegistrationRequest = new CustomerRegistrationRequest(
                 customerOne.getName(),
                 customerOne.getEmail(),
-                customerOne.getAge());
+                customerOne.getAge(),
+                customerOne.getGender());
 
         customerService.insertCustomer(customerRegistrationRequest);
         ArgumentCaptor<Customer> customerArgumentCaptor = ArgumentCaptor.forClass(
@@ -122,7 +124,8 @@ class CustomerServiceTest {
         assertThatThrownBy(() -> customerService.insertCustomer(new CustomerRegistrationRequest(
                 customerOne.getName(),
                 customerOne.getEmail(),
-                customerOne.getAge())))
+                customerOne.getAge(),
+                customerOne.getGender())))
                 .isInstanceOf(DuplicateRessourceException.class)
                         .hasMessage("Customer with email [%s] already exists".formatted(customerOne.getEmail()));
 
@@ -172,6 +175,7 @@ class CustomerServiceTest {
         assertEquals(capturedCustomer.getEmail(),customerUpdateRequest.email());
         assertEquals(capturedCustomer.getName(),customerUpdateRequest.name());
         assertEquals(capturedCustomer.getAge(),customerUpdateRequest.age());
+        assertEquals(capturedCustomer.getGender(),customerUpdateRequest.gender());
 
     }
 
@@ -181,6 +185,7 @@ class CustomerServiceTest {
         int id = 1;
         CustomerUpdateRequest customerUpdateRequest = new CustomerUpdateRequest(
                 "Karim",
+                null,
                 null,
                 null
         );
@@ -198,7 +203,7 @@ class CustomerServiceTest {
         assertEquals(capturedCustomer.getId(), customerTwo.getId());
         assertEquals(capturedCustomer.getEmail(),customerTwo.getEmail());
         assertEquals(capturedCustomer.getAge(),customerTwo.getAge());
-
+        assertEquals(capturedCustomer.getGender(),customerTwo.getGender());
     }
 
     @Test
@@ -208,6 +213,7 @@ class CustomerServiceTest {
         CustomerUpdateRequest customerUpdateRequest = new CustomerUpdateRequest(
                 null,
                 "Karim@gmail.com",
+                null,
                 null
         );
         // When
@@ -225,6 +231,7 @@ class CustomerServiceTest {
         assertEquals(capturedCustomer.getId(), customerTwo.getId());
         assertEquals(capturedCustomer.getName(),customerTwo.getName());
         assertEquals(capturedCustomer.getAge(),customerTwo.getAge());
+        assertEquals(capturedCustomer.getGender(),customerTwo.getGender());
 
     }
 
@@ -235,7 +242,8 @@ class CustomerServiceTest {
         CustomerUpdateRequest customerUpdateRequest = new CustomerUpdateRequest(
                 null,
                 null,
-                39
+                39,
+                null
         );
         // When
         Mockito.when(customerDaoMock.selectCustomerById(id)).thenReturn(Optional.of(customerTwo));
@@ -251,6 +259,35 @@ class CustomerServiceTest {
         assertEquals(capturedCustomer.getId(), customerTwo.getId());
         assertEquals(capturedCustomer.getName(),customerTwo.getName());
         assertEquals(capturedCustomer.getEmail(),customerTwo.getEmail());
+        assertEquals(capturedCustomer.getGender(),customerTwo.getGender());
+
+    }
+
+    @Test
+    void updateCustomerGenderUpdated() {
+        // Given
+        int id = 1;
+        CustomerUpdateRequest customerUpdateRequest = new CustomerUpdateRequest(
+                null,
+                null,
+                null,
+                Gender.fromLabel("Male")
+        );
+        // When
+        Mockito.when(customerDaoMock.selectCustomerById(id)).thenReturn(Optional.of(customerTwo));
+        // Then
+        customerService.updateCustomer(id,customerUpdateRequest);
+
+        ArgumentCaptor<Customer> customerCaptor = ArgumentCaptor.forClass(Customer.class);
+        Mockito.verify(customerDaoMock).updateCustomer(customerCaptor.capture());
+        Customer capturedCustomer = customerCaptor.getValue();
+
+        assertEquals(capturedCustomer.getGender(),customerUpdateRequest.gender());
+
+        assertEquals(capturedCustomer.getId(), customerTwo.getId());
+        assertEquals(capturedCustomer.getName(),customerTwo.getName());
+        assertEquals(capturedCustomer.getEmail(),customerTwo.getEmail());
+        assertEquals(capturedCustomer.getGender(),customerTwo.getGender());
 
     }
 

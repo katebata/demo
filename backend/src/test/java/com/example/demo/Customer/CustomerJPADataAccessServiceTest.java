@@ -30,8 +30,8 @@ class CustomerJPADataAccessServiceTest {
 
     @BeforeEach
     void setUp() {
-        Customer customerOne = new Customer("helio","helio@gmail.com",22);
-        Customer customerTwo = new Customer("sandra","sandra@gmail.com",25);
+        Customer customerOne = new Customer("helio","helio@gmail.com",22,Gender.fromLabel("Male"));
+        Customer customerTwo = new Customer("sandra","sandra@gmail.com",25,Gender.fromLabel("Female"));
     }
 
 

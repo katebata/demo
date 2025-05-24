@@ -3,6 +3,7 @@ package com.example.demo.journey;
 import com.example.demo.Customer.Customer;
 import com.example.demo.Customer.CustomerRegistrationRequest;
 import com.example.demo.Customer.CustomerUpdateRequest;
+import com.example.demo.Customer.Gender;
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,8 @@ public class CustomerIntegrationTest {
         CustomerRegistrationRequest registrationRequest = new CustomerRegistrationRequest(
                 faker.name().firstName(),
                 "test123" + faker.internet().safeEmailAddress(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         // send a post request
@@ -66,7 +68,8 @@ public class CustomerIntegrationTest {
         Customer expectedCustomer = new Customer(
                 registrationRequest.name(),
                 registrationRequest.email(),
-                registrationRequest.age()
+                registrationRequest.age(),
+                registrationRequest.gender()
         );
 
         assertThat(allCustomers)
@@ -103,7 +106,8 @@ public class CustomerIntegrationTest {
         CustomerRegistrationRequest registrationRequest = new CustomerRegistrationRequest(
                 faker.name().firstName(),
                 "test123" + faker.internet().safeEmailAddress(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         // send a post request
@@ -135,7 +139,8 @@ public class CustomerIntegrationTest {
         Customer expectedCustomer = new Customer(
                 registrationRequest.name(),
                 registrationRequest.email(),
-                registrationRequest.age()
+                registrationRequest.age(),
+                registrationRequest.gender()
         );
 
         assertThat(allCustomers)
@@ -179,7 +184,8 @@ public class CustomerIntegrationTest {
         CustomerRegistrationRequest registrationRequest = new CustomerRegistrationRequest(
                 faker.name().firstName(),
                 "test123" + faker.internet().safeEmailAddress(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         webTestClient.post()
@@ -209,7 +215,8 @@ public class CustomerIntegrationTest {
         Customer expectedCustomer = new Customer(
                 registrationRequest.name(),
                 registrationRequest.email(),
-                registrationRequest.age()
+                registrationRequest.age(),
+                registrationRequest.gender()
         );
 
         assertThat(allCustomers)
@@ -231,7 +238,8 @@ public class CustomerIntegrationTest {
         CustomerUpdateRequest updateRequest = new CustomerUpdateRequest(
                 faker.name().lastName(),
                 faker.internet().safeEmailAddress(),
-                faker.number().numberBetween(18, 80)
+                faker.number().numberBetween(18, 80),
+                Gender.fromLabel(faker.demographic().sex())
         );
 
         // update the customer
@@ -261,6 +269,7 @@ public class CustomerIntegrationTest {
         assertEquals(updatedCustomer.getEmail(), updateRequest.email());
         assertEquals(updatedCustomer.getAge(), updateRequest.age());
         assertEquals(updatedCustomer.getName(), updateRequest.name());
+        assertEquals(updatedCustomer.getGender(), updateRequest.gender());
 
     }
 }
