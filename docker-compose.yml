@@ -27,6 +27,19 @@ services:
     command:
       - --spring.datasource.url=jdbc:postgresql://db:5432/customer
 
+  demo-frontend-react:
+    container_name: demo-react
+    image: downloa27/demo-react
+    build:
+      context: frontend/demo-react
+      args:
+        api_base_url: http://localhost:8080
+    ports:
+      - "3000:5173"
+    depends_on:
+      - demo-api
+    restart: unless-stopped
+
 networks:
   db:
     driver: bridge
