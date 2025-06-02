@@ -87,6 +87,12 @@ jobs:
                --data '{"text":":docker: Image tag:${{steps.build-number.outputs.BUILD_NUMBER}} pushed to https://hub.docker.com/repository/downloa27/demo-api"}' \
                "${{ secrets.SLACK_WEBHOOK_URL }}"
 
+      - name: Re‐sync main with latest remote
+        run: |
+          git fetch origin main
+          git checkout main
+          git reset --hard origin/main
+
       - name: Update Dockerrun.aws.json api image tag with new build number
         run: |
           echo "Dockerrun.aws.json before updating tag"
