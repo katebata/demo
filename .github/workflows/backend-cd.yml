@@ -1,5 +1,9 @@
 name: CD - Deploy Backend
 
+concurrency:
+  group: main-cd
+  cancel-in-progress: false
+
 permissions:
   contents: write
 

@@ -8,7 +8,6 @@ import {errorNotification} from "./services/notification.js";
 
 
 const App = () => {
-
     const [customers, setCustomers] = useState([]);
     const [loading, setLoading] = useState(false);
     const [err,setError] = useState("")
