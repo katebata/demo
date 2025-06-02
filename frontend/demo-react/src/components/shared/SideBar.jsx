@@ -59,11 +59,15 @@ const SidebarContent = ({ onClose, ...rest }) => {
                 <Text fontSize="2xl" fontFamily="monospace" fontWeight="bold" mb={5}>
                     Dashboard
                 </Text>
-                <Image
-                    borderRadius='full'
-                    boxSize='75px'
-                    src='https://user-images.githubusercontent.com/40702606/210880158-e7d698c2-b19a-4057-b415-09f48a746753.png'>
-                </Image>
+                <Text
+                    fontSize="xl"
+                    fontFamily="monospace"
+                    fontWeight="bold"
+                    textAlign="center"
+                    w="full"
+                >
+                    Customer Factory 🏭
+                </Text>
                 <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
             </Flex>
             {LinkItems.map((link) => (
@@ -90,7 +94,7 @@ const NavItem = ({ icon, children, ...rest }) => {
                 role="group"
                 cursor="pointer"
                 _hover={{
-                    bg: 'cyan.400',
+                    bg: 'red.400',
                     color: 'white',
                 }}
                 {...rest}>
@@ -135,7 +139,7 @@ const MobileNav = ({ onOpen, ...rest }) => {
                 fontSize="2xl"
                 fontFamily="monospace"
                 fontWeight="bold">
-                Logo
+                Customer Factory 🏭
             </Text>
 
             <HStack spacing={{ base: '0', md: '6' }}>
